@@ -11,13 +11,15 @@ import smena from "../assets/images/lomo-smena-17.jpg";
 import overouticm from "../assets/images/over-out-icm.jpeg";
 import pierre from "../assets/images/pierre.jpeg";
 import tyndfilm from "../assets/images/tynd-film.jpg";
+import gammelfilm from "../assets/images/gammelfilm.jpg";
+import gammelfilm2 from "../assets/images/gammelfilm2.jpg";
 import "../styles/tobii.min.css";
 ---
 
 <MainLayout title="Titel">
   <article class="" x-data>
     <section class="max-w-xl mx-auto mt-32 prose" id="titel">
-      <h2 class="text-9xl mereanimate">Uperfekt er perfekt</h2>
+      <h2 class="text-9xl mereanimate text-orange-500">Uperfekt er perfekt</h2>
     </section>
     <audio x-ref="fuglesang">
       <source src="fugle.mp3" type="audio/mpeg" />
@@ -57,22 +59,22 @@ import "../styles/tobii.min.css";
         </a>
       </div>
       <div class="stag staggeranimation">
-        <p class="text-2xl italic text-center bg-black p-8 text-white">
+        <p class="text-2xl italic text-center bg-orange-500 p-8 text-white">
           Pierre sælger 2 millioner fotos om året
         </p>
-        <p class="text-2xl italic text-center bg-black p-8 text-white">
+        <p class="text-2xl italic text-center bg-orange-500 p-8 text-white">
           Det svarer til én fotolicens hvert 16. sekund
         </p>
-        <p class="text-2xl italic text-center bg-black p-8 text-white">
+        <p class="text-2xl italic text-center bg-orange-500 p-8 text-white">
           Du ser hans fotos ca. 2 gange om dagen
         </p>
       </div>
     </section>
     <section
-      class="max-w-4xl mx-auto my-32 prose border border-double border-black p-8"
+      class="max-w-4xl mx-auto my-32 prose border border-double border-orange-500 p-8"
       id="hvaderstockfotos"
     >
-      <h2 class="text-2xl">Hvad er stock-fotos?</h2>
+      <h2 class="text-2xl text-orange-500">Hvad er stock-fotos?</h2>
       <div class="grid grid-cols-3 gap-4">
         <div>
           <p>
@@ -104,7 +106,7 @@ import "../styles/tobii.min.css";
       </div>
     </section>
     <section class="max-w-xl mx-auto mt-32 prose" id="pierresberoemmelse">
-      <h2 class="text-4xl">Pierres berømmelse</h2>
+      <h2 class="text-4xl text-orange-500">Pierres berømmelse</h2>
       <p>
         Pierres interesse for foto startede som ganske ung - som 10-årig fik han
         sin fars gamle Rollei-kamera, og begyndte at skyde løs. Det var før den
@@ -139,7 +141,7 @@ import "../styles/tobii.min.css";
     </section>
     <section id="enskillevej">
       <div class="max-w-xl mx-auto mt-32 prose">
-        <h2 class="text-4xl">En skillevej</h2>
+        <h2 class="text-4xl text-orange-500">En skillevej</h2>
         <p>
           Pierre tjente godt det følgende årti. Men stille og roligt begyndte
           billederne også at give ham kvalme. Han kunne ikke holde sit eget
@@ -183,13 +185,13 @@ import "../styles/tobii.min.css";
       </div>
     </section>
     <section
-      class="max-w-4xl mx-auto my-32 prose border border-double border-black p-8"
+      class="max-w-4xl mx-auto my-32 prose border border-double orange-500 p-8"
       id="fotoeksperimenter"
     >
-      <h2 class="text-2xl">Fotoeksperimenter</h2>
+      <h2 class="text-2xl text-orange-500">Fotoeksperimenter</h2>
       <div class="grid grid-cols-3 gap-4">
         <div>
-          <h3 class="text-xl">Analog fotografering</h3>
+          <h3 class="text-xl text-orange-500">Analog fotografering</h3>
           <p>
             Fotografering med gode, gammeldags filmruller. Analog fotografering
             stiger for tiden i popularitet, specielt blandt unge, og prisen på
@@ -209,7 +211,7 @@ import "../styles/tobii.min.css";
           </p>
         </div>
         <div>
-          <h3 class="text-xl">Glitch art</h3>
+          <h3 class="text-xl text-orange-500">Glitch art</h3>
           <p>
             Når der sker en teknisk fejl i et medie/en kommunikationskanal
             kaldes det en glitch. Glitch art går ud på at dyrke fejlene for at
@@ -219,7 +221,7 @@ import "../styles/tobii.min.css";
           <p></p>
         </div>
         <div>
-          <h3 class="text-xl">Lomografi</h3>
+          <h3 class="text-xl text-orange-500">Lomografi</h3>
           <p>
             Et lomografi er egentlig bare et fotografi skudt uden videre
             omtanke, og med noget foto-udstyr af ret alternativ kvalitet.
@@ -236,7 +238,7 @@ import "../styles/tobii.min.css";
     </section>
     <section id="nybegyndelse">
       <div class="max-w-xl mx-auto my-32 prose">
-        <h2 class="text-4xl">En ny begyndelse</h2>
+        <h2 class="text-4xl text-orange-500">En ny begyndelse</h2>
         <p>
           Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men
           han har stadig lidt penge på kontoen, og studerer nu
@@ -285,9 +287,6 @@ import "../styles/tobii.min.css";
             fri. Jeg føler mig genfødt.”</span
           >
         </p>
-        <video width="1280" height="960" autoplay muted loop>
-          <source src="192-1.mov" type="video/mov" />
-        </video>
         <div>
           <a href="lidtifem-pierre-falcke.jpg" class="lightbox" alt="">
             <Image src={lidtifem} alt="" class="my-0" />
@@ -297,56 +296,185 @@ import "../styles/tobii.min.css";
       </div>
     </section>
     <div
-      class="progress-bar h-4 fixed w-full bg-rose-900 left-0 origin-top-left top-0 right-0"
+      class="progress-bar h-4 fixed w-full bg-orange-500 left-0 origin-top-left top-0 right-0"
     >
     </div>
+    <section
+      id="crossfade"
+      class="crossfadeimg flex justify-center items-center relative h-screen w-screen"
+    >
+      <Image
+        src={gammelfilm}
+        alt="gammelfilm"
+        class="crossfadetopimg object-cover h-1/2 w-1/2 absolute top-1/4 z-0"
+      />
+      <Image
+        src={gammelfilm2}
+        alt="gammelfilmfarve"
+        class="crossfadebottomimg object-cover h-1/2 w-1/2 absolute top-1/4 z-0"
+      />
+    </section>
+    <article class="sticky">
+      <div
+        class="sticky top-1/4 mangeelementerinview grid grid-cols-5 text-orange-900"
+      >
+        <div class="p-8 bg-orange-200 mangeelementer7">Det</div>
+        <div class="p-8 bg-orange-300 mangeelementer7">her</div>
+        <div class="p-8 bg-orange-400 mangeelementer3">er</div>
+        <div class="p-8 bg-orange-500 mangeelementer8">jo</div>
+        <div class="p-8 bg-orange-600 mangeelementer8">faktisk</div>
+        <div class="p-8 bg-pink-200 mangeelementer9">ret</div>
+        <div class="p-8 bg-pink-300 mangeelementer9">så</div>
+        <div class="p-8 bg-pink-400 mangeelementer10">sejt</div>
+        <div class="p-8 bg-pink-500 mangeelementer10">! :-)</div>
+        <div class="p-8 bg-pink-600 mangeelementer10">God weekend</div>
+      </div>
+      <div class="sticky top-0 h-screen"></div>
+    </article>
+    <div class="flex justify-center items-center">
+      <video
+        width="500"
+        height="480"
+        autoplay
+        muted
+        loop
+        class="left-0 bottom-0"
+      >
+        <source src="vid-1.mov" type="video/mp4" />
+        <source src="vid-.webm" type="video/webm" />
+      </video>
+    </div>
+
+    <main class="container max-w-4xl mx-auto p-8 prose prose-xl overflow-clip">
+      <section id="horisontalscrollsection" class="h-[500vh] relative">
+        <ul id="horisontalliste" class="list-none flex sticky top-0">
+          <li
+            class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+          >
+            <img class="w-[600px] h-[400px]" src="tynd-film.jpg" alt="foto" />
+          </li>
+          <li
+            class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+          >
+            <img class="w-[600px] h-[400px]" src="glitch.jpg" alt="foto" />
+          </li>
+          <li
+            class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+          >
+            <img class="w-[600px] h-[400px]" src="apoteket.jpg" alt="foto" />
+          </li>
+          <li
+            class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+          >
+            <img
+              class="w-[600px] h-[400px]"
+              src="lomo-smena-17.jpg"
+              alt="foto"
+            />
+          </li>
+          <li
+            class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"
+          >
+            <img class="w-[600px] h-[400px]" src="pierre.jpeg" alt="foto" />
+          </li>
+        </ul>
+      </section>
+    </main>
   </article>
-</MainLayout>
-<script is:inline src="tobii.min.js"></script>
-<script defer>
-  const tobii = new Tobii();
-</script>
-<script>
-  import { animate, stagger, inView, scroll, timeline } from "motion";
-  //animate//
-  animate("body", { opacity: [0, 1] }, { duration: 5 });
+  <script is:inline src="tobii.min.js"></script>
+  <script defer>
+    const tobii = new Tobii();
+  </script>
+  <script>
+    import { animate, stagger, inView, scroll, timeline } from "motion";
+    //animate//
+    animate("body", { opacity: [0, 1] }, { duration: 5 });
 
-  animate(
-    ".mereanimate",
-    { opacity: [0.4, 1, 0, 0.8], scale: [0.95, 1, 0.7, 0.9] },
-    { delay: 5, duration: 4, direction: "alternate", repeat: Infinity }
-  );
-
-  scroll(animate(".progress-bar", { scaleX: [0, 1] }));
-  //stagger//
-  inView(".staggeranimation", () => {
     animate(
-      ".staggeranimation p",
-      { x: [-2000, 0] },
+      ".mereanimate",
+      { opacity: [0.4, 1, 0, 0.8], scale: [0.95, 1, 0.7, 0.9] },
+      { delay: 5, duration: 4, direction: "alternate", repeat: Infinity }
+    );
+
+    scroll(animate(".progress-bar", { scaleX: [0, 1] }));
+
+    //stagger//
+
+    inView(".staggeranimation", () => {
+      animate(
+        ".staggeranimation p",
+        { x: [-2000, 0], y: [-800, 0], opacity: [0, 1] },
+        {
+          delay: stagger(0.5, { start: 0.5 }),
+        }
+      );
+    });
+
+    //timeline//
+
+    const timelineanimation = [
+      [".timelineanimation", { opacity: 1 }, { duration: 5 }],
+      [".timelineanimation", { transform: "rotate(360deg)" }, { duration: 3 }],
+      [".timelineanimation", { transform: "scale(1.5)" }, { duration: 0.5 }],
+      [".timelineanimation", { transform: "scale(1)" }, { duration: 1 }],
+    ];
+    timeline(timelineanimation);
+
+    //zoom//
+    scroll(
+      animate(".scrollzoomimg", {
+        scale: [1, 1.5],
+      }),
       {
-        delay: stagger(0.5, { start: 0.5 }),
+        target: document.querySelector(".scrollzoom"),
+        offset: ["0.5 0.5", "1 1"],
       }
     );
-  });
 
-  //timeline//
+    //crossfade//
+    scroll(
+      animate(".crossfadebottomimg", {
+        opacity: [1, 0],
+      }),
+      {
+        target: document.querySelector(".crossfadeimg"),
+        offset: ["-25vh", "25vh"],
+      }
+    );
 
-  const timelineanimation = [
-    [".timelineanimation", { opacity: 1 }, { duration: 5 }],
-    [".timelineanimation", { transform: "rotate(360deg)" }, { duration: 3 }],
-    [".timelineanimation", { transform: "scale(1.5)" }, { duration: 0.5 }],
-    [".timelineanimation", { transform: "scale(1)" }, { duration: 1 }],
-  ];
-  timeline(timelineanimation);
+    //animer elementer ind//
 
-  //zoom//
-  scroll(
-    animate(".scrollzoomimg", {
-      scale: [1, 1.5],
-    }),
-    {
-      target: document.querySelector(".scrollzoom"),
-      offset: ["0.5 0.5", "1 1"],
-    }
-  );
-</script>
+    inView(".mangeelementerinview", () => {
+      animate(".mangeelementer1", { x: [-2000, 0] }, { duration: 2 });
+      animate(".mangeelementer2", { x: [-1500, 0] }, { duration: 2 });
+      animate(".mangeelementer3", { x: [-1000, 0] }, { duration: 2 });
+      animate(".mangeelementer4", { x: [-500, 0] }, { duration: 2 });
+      animate(".mangeelementer5", { x: [-2000, 0] }, { duration: 2 });
+      animate(".mangeelementer6", { x: [2000, 0] }, { duration: 2 });
+      animate(".mangeelementer7", { x: [1500, 0] }, { duration: 2 });
+      animate(".mangeelementer8", { x: [1000, 0] }, { duration: 2 });
+      animate(".mangeelementer9", { x: [500, 0] }, { duration: 2 });
+      animate(".mangeelementer10", { x: [2000, 0] }, { duration: 2 });
+      return () => {
+        animate(".mangeelementer1", { x: [-2000, 0] }, { duration: 2 });
+        animate(".mangeelementer2", { x: [-1500, 0] }, { duration: 2 });
+        animate(".mangeelementer3", { x: [-1000, 0] }, { duration: 2 });
+        animate(".mangeelementer4", { x: [-500, 0] }, { duration: 2 });
+        animate(".mangeelementer5", { x: [-2000, 0] }, { duration: 2 });
+        animate(".mangeelementer6", { x: [2000, 0] }, { duration: 2 });
+        animate(".mangeelementer7", { x: [1500, 0] }, { duration: 2 });
+        animate(".mangeelementer8", { x: [1000, 0] }, { duration: 2 });
+        animate(".mangeelementer9", { x: [500, 0] }, { duration: 2 });
+        animate(".mangeelementer10", { x: [2000, 0] }, { duration: 2 });
+      };
+    });
+    //horisontal scroll//
+    const items = document.querySelectorAll("#horisontalliste li");
+    scroll(
+      animate("#horisontalliste", {
+        transform: ["none", `translateX(-${items.length - 1}00vw)`],
+      }),
+      { target: document.querySelector("#horisontalscrollsection") }
+    );
+  </script>
+</MainLayout>
